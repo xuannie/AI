@@ -1,8 +1,12 @@
 /**
  * Solve painted-squares puzzle.
  *
- * @author  Terry Sergeant
- * @version Spring 2016
+ * @author  Alexis Chuah
+ * @version 28 Jan 2016
+ *
+ * <p>
+ * Solves and displays solutions to  painted-squares puzzle and calculates time taken.
+ * </p>
  *
 */
 
@@ -10,12 +14,15 @@ import java.util.Scanner;
 
 public class Driver
 {
+
 	public static void main(String [] args)
 	{
+
+		long start, stop;
+		double solveTime;
 		/*
 		Tile t= new Tile(0,1,2,3);
-
-		for (int i=0; i<5; i++) {
+	
 			System.out.println(t);
 			t.turn();
 		}
@@ -26,9 +33,15 @@ public class Driver
 			System.exit(-1);
 		}
 
+		
 		Board b= new Board(args[0]);
-		b.display();
-	}
+		//b.display();
+		start = System.currentTimeMillis();
+		b.solve();
+		stop = System.currentTimeMillis();
 
+		solveTime = stop-start;
+		System.out.println("Time taken to solve puzzle: " + ((solveTime)/1000.0) + "\n");
+	}
 }
 

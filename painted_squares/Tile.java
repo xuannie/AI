@@ -1,8 +1,15 @@
 /**
  * Represents a text-based tile for a painted square puzzle.
  *
- * @author  Terry Sergeant
- * @version Spring 2016
+ * @author  Alexis Chuah
+ * @version 28 Jan 2016
+ *
+ * <p>
+ * Methods: 
+ * 		1. Holds tile rotation and values of sides
+ * 		2. Rotates tiles 
+ * 		3. Returns true/false if tile sides match either top or left tile. 
+ * </p>
  *
 */
 
@@ -73,6 +80,25 @@ public class Tile
 		orientation= (orientation+1)%4;
 	}
 
+	/**
+	 * Return sides in order of current orientation.
+	 *
+	 * @return reference to re-oriented sides array
+	 */
+	public int [] getSides()
+	{
+		int i=orientation;
+		int [] delta = new int[4];
+		delta[0]=sides[i];
+		i= (i+1)%4;
+		delta[1]= sides[i];
+		i= (i+1)%4;
+		delta[2]= sides[i];
+		i= (i+1)%4;
+		delta[3]= sides[i];
+		return delta;
+	}
+
 
 	/**
 	 * Check if current tile's left face (in current orientation) matches the
@@ -83,7 +109,28 @@ public class Tile
 	 */
 	public boolean matchLeft(Tile tileToLeft)
 	{
+		int [] currTile = this.getSides();
+		int [] compare = tileToLeft.getSides();
+	
+		if(currTile[3] == compare[1])
+			return true;
 		return false;
 	}
 
+	/**
+	 * Check if current tile's top face (in current orientation) matches the
+	 * tileToTop's bottom facing tile.
+	 *
+	 * @param tileToTop tile to top of this one we are comparing with
+	 * @return true if compared faces match; false otherwise
+	 */
+	public boolean matchTop(Tile tileToTop)
+	{
+		int [] currTile = this.getSides();
+		int [] compare = tileToTop.getSides();
+
+		if(currTile[0] == compare[2])
+			return true;
+		return false;
+	}
 }
