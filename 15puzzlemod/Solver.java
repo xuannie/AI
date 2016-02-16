@@ -20,8 +20,10 @@ public class Solver
 	private Board solved;    // solved board
 	private Scanner source;  // source from which we read next board
 	private Timer timer;     // track wall-clock time of solution
-	private int count;       // number of states we enqueued during solution
+	private int states;       // number of states we enqueued during solution
+	private int duplicateStates; //number of duplicate states encountered
 	private boolean found;
+	Integer count;
 
 	/**
 	 * Initialize the solver by specifying puzzle sizes and input source.
@@ -93,7 +95,7 @@ public class Solver
 		}
 		display();
 		System.out.println();
-		return board.toString()+" -->\n"+solved.toString()+" ("+timer+"; states: "+count+")";
+		return board.toString()+" -->\n"+solved.toString()+" ("+timer+"; duplicate states: " + duplicateStates + "; states: "+states+")";
 	}
 
 
@@ -128,7 +130,7 @@ public class Solver
 	private void astar(Board start)
 	{
 		PriorityQueue<Board> openSet = new PriorityQueue<Board>();
-			
+		HashSet<Board> closeSet = new HashSet<Board>();	
 		Board curr;
 		Board next;
 		openSet.add(start);
@@ -139,11 +141,13 @@ public class Solver
 		while(!openSet.isEmpty() && !found){
 			curr = openSet.remove();
 			steps = curr.getSteps();
+			closeSet.add(curr);
 
 			if(curr.isGoal()){
-					found=true;
-					solved=curr;
-					return;
+				found=true;
+				solved=curr;
+
+				return;
 			}
 
 			for (int i=0; i<moves.length(); i++){
@@ -151,10 +155,16 @@ public class Solver
 
 				if(curr.canMove(dir)){
 					next = curr.movePiece(dir, steps);
-					openSet.add(next);
-					count++;
+					
+					if(closeSet.contains(next)){
+						duplicateStates++;
+					}
+					else{
+						openSet.add(next);
+						states++;
+					}
 				}
 			}
-		}	
+		}
 	}
 }

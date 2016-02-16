@@ -5,6 +5,7 @@
  * @version 15 Feb 2016
  *
  */
+import java.util.Arrays;
 
 public class Board implements Comparable<Board>
 {
@@ -15,7 +16,7 @@ public class Board implements Comparable<Board>
 	private Board prev;    // pointer to previous state
 	private int	h;         // heuristic value (manhattan distance)
 	private int	g;         // cost so far
-
+	protected int repeat;	 // Repeat of board state
 
 	/**
 	 * Constructor based on starting tile positions and board dimensions.
@@ -38,6 +39,7 @@ public class Board implements Comparable<Board>
 		this.prev= null;     // and no previous board
 		this.h= manhattan(); // use manhattan distance to estimate position
 		this.g= 0;           // no steps taken with a new board
+		this.repeat=0;
 	}
 
 
@@ -60,6 +62,7 @@ public class Board implements Comparable<Board>
 		this.prev= lastBoard;     
 		this.h= manhattan(); // use manhattan distance to estimate position
 		this.g= steps+1;           
+		this.repeat= 0;			 // no repeats with a new board
 	}
 
 	/**
@@ -79,6 +82,26 @@ public class Board implements Comparable<Board>
 		return (thisCost - otherCost);
 	}
 
+	/**
+	 * Overriding hashcode
+	 */
+	public int hashCode(){
+		return Arrays.hashCode(this.tiles);
+	}
+
+	/**
+	 * Overriding equals method
+	 */
+	public boolean equals(Object obj){
+		if (!(obj instanceof Board))
+			return false;
+		if (obj == this)
+			return true;
+
+		Board object = (Board) obj;
+
+		return Arrays.equals(this.tiles,object.tiles);
+	}
 
 	/**
 	 * Calculate classic manhattan distance for a board.
@@ -156,7 +179,7 @@ public class Board implements Comparable<Board>
 			case 'R': 
 					//swap "blank" with tile to right.
 					newtiles[bpos]=newtiles[bpos+1];
-					newtiles[bpos+1]=this.tiles[bpos];
+					newtiles[bpos+1]=basetile;
 				break;
 		}
 
