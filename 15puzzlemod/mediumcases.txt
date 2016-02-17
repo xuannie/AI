@@ -1,0 +1,24 @@
+Directions to solution: X R D L D D R U U L U R D L L D R R D L L U U U R R R D D D
+(4 15 6 2 5 9 0 3 8 1 10 7 13 12 14 11 | f:15, g: 0, h:15) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:29, g:29, h: 0) (0.031; duplicate states: 1931; states: 44152)
+------------------------------------------------
+Directions to solution: X U R D L D D R U U L U R D L L D R R D L L U U U R R R D D D
+(4 9 6 2 5 15 0 3 8 1 10 7 13 12 14 11 | f:16, g: 0, h:16) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:30, g:30, h: 0) (0.031; duplicate states: 4834; states: 107203)
+------------------------------------------------
+Directions to solution: X D D R R U L L U R U R D D D L U U U R D L L U R R R D D D
+(4 9 6 2 15 5 0 3 8 1 10 7 13 12 14 11 | f:15, g: 0, h:15) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:29, g:29, h: 0) (0.016; duplicate states: 6385; states: 144136)
+------------------------------------------------
+Directions to solution: X R R R D L L D D R U U L U R D L L D R R D L L U U U R R R D D D
+(15 4 6 0 5 9 3 2 8 1 10 7 13 12 14 11 | f:18, g: 0, h:18) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:32, g:32, h: 0) (0.015; duplicate states: 10125; states: 220993)
+------------------------------------------------
+Directions to solution: X U L D D R R U L L U R U R R D L D D L U U U R D L L U R R R D D D
+(4 9 6 0 5 1 3 2 8 15 10 7 13 12 14 11 | f:17, g: 0, h:17) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:33, g:33, h: 0) (0.047; duplicate states: 18001; states: 367647)
+------------------------------------------------
+Directions to solution: X L U R D D L U L L D D R U L U R U R D R D D L L U U L U R R D D D R
+(4 9 6 0 5 1 3 15 8 10 7 2 13 12 14 11 | f:20, g: 0, h:20) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:34, g:34, h: 0) (0.125; duplicate states: 33403; states: 631151)
+------------------------------------------------

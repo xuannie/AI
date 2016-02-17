@@ -1,0 +1,28 @@
+Directions to solution: X U R D L L L D D R R R U L L L U R U R D R D D L L U U L U R R R D D D
+(4 9 6 0 5 1 15 2 8 10 3 7 13 12 14 11 | f:19, g: 0, h:19) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:35, g:35, h: 0) (0.187; duplicate states: 18685; states: 348796)
+------------------------------------------------
+Directions to solution: X R D L D L U U R R D L L U R D L D D R U U L L D R R D L L U U U R R R D D D
+(4 1 15 9 5 6 2 0 8 10 3 7 13 12 14 11 | f:20, g: 0, h:20) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:38, g:38, h: 0) (1.406; duplicate states: 170408; states: 2269341)
+------------------------------------------------
+Directions to solution: X L D D R R R U L L L U R R U R D D D L L U U U R D L L U R R R D D D
+(4 6 1 0 5 15 9 2 8 10 3 7 13 12 14 11 | f:20, g: 0, h:20) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:34, g:34, h: 0) (0.219; duplicate states: 187285; states: 2582746)
+------------------------------------------------
+Directions to solution: X U R D D L L D L U U R R R D D L L U U U L D R U R D L L U R D L D D R R R
+(6 1 9 0 4 5 15 3 8 10 7 2 13 12 14 11 | f:19, g: 0, h:19) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:37, g:37, h: 0) (0.562; duplicate states: 237776; states: 3375308)
+------------------------------------------------
+Directions to solution: X R R D R D L L D L U U R R R U L D R D L D L U L U R U L D D D R R U L U R D R D
+(15 1 9 5 6 4 3 0 8 10 7 2 13 12 14 11 | f:24, g: 0, h:24) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:40, g:40, h: 0) (0.605; duplicate states: 322586; states: 4608887)
+------------------------------------------------
+Directions to solution: X U U R R U L D R D L L D R U L L U U R D R D D L U L U U R R D R D L L L U U R R D D R D
+(9 8 3 5 6 10 4 0 13 1 7 2 12 15 14 11 | f:30, g: 0, h:30) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:44, g:44, h: 0) (0.984; duplicate states: 433712; states: 6513940)
+------------------------------------------------
+Directions to solution: X R R U U R D D L D L L U R U U R R D L D D L U U L U R R D D L U L U R R R D L L L D R R R D
+(6 9 3 5 8 13 10 0 15 12 4 2 14 7 1 11 | f:36, g: 0, h:36) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:46, g:46, h: 0) (0.312; duplicate states: 459675; states: 7117683)
+------------------------------------------------
