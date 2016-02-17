@@ -1,0 +1,28 @@
+Directions to solution: X L L D D R R R U L L L U R U R R D D D L L U U U R D L L U R R R D D D
+(4 9 6 0 5 1 15 2 8 10 3 7 13 12 14 11 | f:19, g: 0, h:19) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:35, g:35, h: 0) (0.765; states: 1116663)
+------------------------------------------------
+Directions to solution: X R D L D L U L D D R R U L L U R U R R D L L U R D D D L U U L U R R R D D D
+(4 1 15 9 5 6 2 0 8 10 3 7 13 12 14 11 | f:20, g: 0, h:20) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:38, g:38, h: 0) (5.120; states: 7534832)
+------------------------------------------------
+Directions to solution: X L D D R R R U L L L U R R U R D D D L L U U U R D L L U R R R D D D
+(4 6 1 0 5 15 9 2 8 10 3 7 13 12 14 11 | f:20, g: 0, h:20) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:34, g:34, h: 0) (0.599; states: 8621707)
+------------------------------------------------
+Directions to solution: X L U L D D D R U L U R R U R D D L U R D D L L U U U R D L L U R D D R D R
+(6 1 9 0 4 5 15 3 8 10 7 2 13 12 14 11 | f:19, g: 0, h:19) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:37, g:37, h: 0) (0.648; states: 10639583)
+------------------------------------------------
+Directions to solution: X R R D R D L L D L U U R R R U L D R D L D L U L U R U L D D D R R U L U R D R D
+(15 1 9 5 6 4 3 0 8 10 7 2 13 12 14 11 | f:24, g: 0, h:24) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:40, g:40, h: 0) (1.853; states: 14897851)
+------------------------------------------------
+Directions to solution: X R U U R U L D L D R R U L D L L U U R R D D D L U L U U R D R D R U L D L L U R R D R D
+(9 8 3 5 6 10 4 0 13 1 7 2 12 15 14 11 | f:30, g: 0, h:30) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:44, g:44, h: 0) (1.381; states: 17276685)
+------------------------------------------------
+Directions to solution: X R R U R D L D L L U R U R U L D L U R R R D L D D L U U L D R U U R D D L U U R R D L D R D
+(6 9 3 5 8 13 10 0 15 12 4 2 14 7 1 11 | f:36, g: 0, h:36) -->
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 | f:46, g:46, h: 0) (0.890; states: 19646965)
+------------------------------------------------
