@@ -20,10 +20,9 @@ public class Solver
 	private Board solved;    // solved board
 	private Scanner source;  // source from which we read next board
 	private Timer timer;     // track wall-clock time of solution
-	private int states;       // number of states we enqueued during solution
+	private int states;       // total number of states encountered
 	private int duplicateStates; //number of duplicate states encountered
 	private boolean found;
-	Integer count;
 
 	/**
 	 * Initialize the solver by specifying puzzle sizes and input source.
@@ -155,13 +154,13 @@ public class Solver
 
 				if(curr.canMove(dir)){
 					next = curr.movePiece(dir, steps);
-					
+					states++;
+
 					if(closeSet.contains(next)){
 						duplicateStates++;
 					}
 					else{
-						openSet.add(next);
-						states++;
+						openSet.add(next);		
 					}
 				}
 			}
